@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vayu Consultancy - Your Passport to the World</title>
+    <title>Global Wings Consultancy Services - Your Passport to the World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Vayu Consultancy</div>
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-text">Global Wings<br>Consultancy Services</div>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -26,7 +29,7 @@
         <div class="container">
             <h1>YOUR PASSPORT TO THE WORLD</h1>
             <p class="hero-text">
-                With over a decade of expertise, Vayu Consultancy stands as a trusted leader in visa and immigration services. We simplify complex processes, ensuring a seamless experience for individuals, businesses, and expatriates.
+                With over a decade of expertise, Global Wings Consultancy Services stands as a trusted leader in visa and immigration services. We simplify complex processes, ensuring a seamless experience for individuals, businesses, and expatriates.
             </p>
             <a href="contact.html" class="cta-button">Get Started</a>
         </div>
@@ -92,7 +95,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Vayu Consultancy. All rights reserved.</p>
+            <p>&copy; 2024 Global Wings Consultancy Services. All rights reserved.</p>
         </div>
     </footer>
 
@@ -132,9 +135,20 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 1.2rem;
             font-weight: bold;
-            color: #2c5aa0;
+            color: #1B4B66;
         }
 
         .nav-links {
@@ -153,26 +167,28 @@
 
         .nav-links a:hover,
         .nav-links a.active {
-            background: #2c5aa0;
+            background: #1B4B66;
             color: white;
         }
 
         /* Hero Section */
         .hero {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #4096FF 0%, #1B4B66 100%);
             text-align: center;
             padding: 80px 0;
+            color: white;
         }
 
         .hero h1 {
             font-size: 2.8rem;
-            color: #2c5aa0;
+            color: white;
             margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero-text {
             font-size: 1.2rem;
-            color: #666;
+            color: rgba(255,255,255,0.9);
             margin-bottom: 2rem;
             max-width: 800px;
             margin-left: auto;
@@ -181,17 +197,20 @@
 
         .cta-button {
             display: inline-block;
-            background: #2c5aa0;
-            color: white;
+            background: #DAB333;
+            color: #1B4B66;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(218, 179, 51, 0.3);
         }
 
         .cta-button:hover {
-            background: #1e3f73;
+            background: #C19A00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(218, 179, 51, 0.4);
         }
 
         /* Services Section */
@@ -263,7 +282,7 @@
         }
 
         .feature-item h3 {
-            color: #2c5aa0;
+            color: #1B4B66;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
@@ -302,7 +321,7 @@
 
         /* Footer */
         footer {
-            background: #333;
+            background: #1B4B66;
             color: white;
             text-align: center;
             padding: 2rem 0;
