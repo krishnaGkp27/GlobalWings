@@ -10,7 +10,7 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <div class="logo-img"></div>
+                <img src="https://raw.githubusercontent.com/krishnaGkp27/GlobalWings/main/logo.png" alt="Global Wings Logo" class="logo-img">
                 <div class="logo-text">Global Wings<br>Consultancy Services</div>
             </div>
             <ul class="nav-links">
@@ -156,7 +156,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
         }
@@ -167,7 +167,7 @@
             padding: 0 20px;
         }
 
-        /* Header */
+        /* Header - Same styling as index page */
         header {
             background: #fff;
             padding: 1rem 0;
@@ -190,27 +190,10 @@
         }
         
         .logo-img {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #4096FF 0%, #1B4B66 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .logo-img::before {
-            content: "🌍";
-            font-size: 24px;
-        }
-        
-        .logo-img::after {
-            content: "✈️";
-            position: absolute;
-            font-size: 12px;
-            top: 5px;
-            right: 5px;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 8px;
         }
         
         .logo-text {
@@ -232,6 +215,7 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             transition: all 0.3s ease;
+            font-weight: 500;
         }
 
         .nav-links a:hover,
@@ -385,3 +369,45 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
+        .benefit-item h3 {
+            color: #1B4B66;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .benefit-item p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
